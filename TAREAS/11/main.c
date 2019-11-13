@@ -31,4 +31,5 @@ int main (int argc, char *argu[]){
 	resultado=raiz(num,tolerancia,resultado);
 	//y se muestra
 	printf("%lf\n",resultado);
+return 0;
 }
