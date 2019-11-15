@@ -20,9 +20,9 @@ void raicesI(double  a, double  b, double  c,double  determinante){
 	//se necesitaran 4 variables
 	double  x11,x12,x21,x22;
 	//esta es la primer x
-	x11=-b/(2*a); x12=parte/2*a;
+	x11=-b/(2*a); x12=parte/(2*a);
 	//esta es la segunda x
-	x21=-b/(2*a); x22=-parte/2*a;
+	x21=-b/(2*a); x22=-parte/(2*a);
 	if (b==0){
 		x11=0; x21=x11;
 	}
@@ -42,7 +42,8 @@ int main (int argc, char* argu[]){
 	a=atof(argu[1]);b=atof(argu[2]);c=atof(argu[3]);
 	double determinante;
 	//se hace el determinante
-	determinante=(pow(b,2))-(4*a*c);
+	determinante=pow(b,2);
+	determinante=determinante-(4*a*c);
 	//si es 0 solo tiene una solucion
 	if (determinante==0){
 		raizU(a,b);
