@@ -32,4 +32,5 @@ int main(int argc,char* argu[]){
 	for (int i=0;i<argc-1;i++){
 		printf("%i\n",numeros[i]);
 	}
+  return 0;
 }
